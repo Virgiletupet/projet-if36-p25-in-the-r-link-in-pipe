@@ -13,7 +13,15 @@ Notre objectif principal est d'analyser le temps de complétion de différents j
 
 Avant toute chose, nous avons réfléchi aux questions que nous souhaitons poser à nos données, aux croisements de variables intéressants, et aux méthodes de visualisation potentielles.
 
+### 🎯 Objectifs & interrogations
 
+- Quels sont les facteurs qui influencent le temps de complétion d’un jeu vidéo ?
+- Sur quelles parties les joueurs passent-ils le plus de temps (main story, extras, completionist) ?
+- Les temps de complétion varient-ils selon la plateforme ?
+- Combien de temps les joueurs passent-ils à jouer en moyenne ?
+- Y a-t-il une corrélation entre le temps de jeu et la note du jeu ? la date de sortie ? les genres ?
+- Quels sont les jeux les plus longs et les plus courts ? Appartiennent-ils à certains genres ?
+- Les modes multijoueurs (coopératif ou compétitif) influencent-ils la durée de jeu ?
 
 ### 🔄 Variables à comparer
 
