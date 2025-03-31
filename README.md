@@ -6,7 +6,44 @@
 
 **📄 Source**
 
-Notre objectif principal est d'analyser le temps de complétion de différents jeus vidéos afin de voir par quoi il est impacté. Nous avons donc sélectionné un jeu de données appelé Video Games Playtime, que nous avons trouvé sur [Kaggle](https://www.kaggle.com/datasets/baraazaid/how-long-to-beat-video-games). ll est basé sur les données du site [How Long To Beat](https://howlongtobeat.com), qui recense des données sur le temps nécessaire pour terminer un jeu vidéo, selon différents styles de jeu. Ce jeu de données a été mis à jour pour la dernière fois en 2023. Le fichier est au format jsonlines et contient 60 410 entrées.
+Notre objectif principal est d'analyser le temps de complétion de différents jeus vidéos afin de voir par quoi il est impacté. Nous avons donc sélectionné un jeu de données appelé Video Games Playtime, que nous avons trouvé sur [Kaggle](https://www.kaggle.com/datasets/baraazaid/how-long-to-beat-video-games). ll est basé sur les données du site [How Long To Beat](https://howlongtobeat.com), qui recense des données sur le temps nécessaire pour terminer un jeu vidéo, selon différents styles de jeu. Ce jeu de données a été mis à jour pour la dernière fois en **2023**. Le fichier est au format **jsonlines** et contient **60 410 entrées**.
+
+---
+
+**📦 Description détaillée des variables**
+
+Plusieurs variables nous intéressent :
+
+- `Single-Player_Main Story_Average` : temps moyen pour terminer l’histoire principale en solo.
+- `Single-Player_Main + Extras_Average` : temps moyen pour l’histoire principale avec le contenu additionnel.
+- `Single-Player_Completionist_Average` : temps moyen pour terminer le jeu à 100%.
+- `Single-Player_All PlayStyles_Average` : temps moyen tous styles de joueurs confondus.
+- `Single-Player_Main Story_Rushed` et `Single-Player_Main Story_Leisure` : estiment les temps pour une complétion rapide ou détendue.
+- Pour chaque temps de jeu, des variables supplémentaires telles que `Polled`, `Median`, `Rushed`, `Leisure` permettent d’explorer :
+  - Le nombre de joueurs sondés (`Polled`)
+  - La médiane (`Median`)
+  - Le style de jeu rapide (`Rushed`) ou détendu (`Leisure`)
+
+Autres variables notables :
+- `Genres` : liste des genres associés à chaque jeu (type `character`).
+- `Review_score` : note moyenne attribuée par les joueurs (type `integer`, en pourcentage).
+- `Release_date` : date de sortie du jeu (type `character`, au format `YYYY-MM-DD`).
+- `Platform` : liste des plateformes sur lesquelles le jeu est disponible (type `character`).
+- `Name` : titre du jeu (type `character`).
+
+---
+
+**🧩 Données complémentaires potentielles : OpenCritic**
+
+Afin d’enrichir notre analyse et de croiser les points de vue entre joueurs et professionnels, nous avons mis de côté un potentiel second jeu de données. En complément du premier dataset, nous avons sélectionné **OpenCritic Ratings for all games and platforms**, contenant les évaluations issues de la presse spécialisée. Ce dataset provient du site [OpenCritic](https://opencritic.com), et permet de croiser :
+
+- Le **score moyen agrégé** de la presse
+- Une **classification qualitative OpenCritic** (ex. "Mighty", "Strong", etc.)
+- Les **plateformes**, la **date de sortie** et l’**URL OpenCritic** de chaque jeu
+
+Ce fichier est un `.csv` comportant 6 variables (toutes au format texte), avec des dates sous la forme `"Month Day, Year"` (ex: `"January 1, 2023"`). Il couvre tous les jeux sortis jusqu’en 2023.
+
+Ce second dataset pourrait nous permettre de comparer les **avis des joueurs** (depuis `How Long To Beat`) avec ceux de la **presse spécialisée** (via `OpenCritic`) par exemple.
 
 
 ---
@@ -46,7 +83,7 @@ Selon les variables analysées, nous envisageons d’utiliser :
 - Des **histogrammes** pour visualiser les distributions de temps
 - Des **boîtes à moustaches** (boxplots) pour comparer les genres ou années
 - Des **courbes temporelles** pour étudier l’évolution dans le temps
-- **D'autres vizualisations adéquates** pour explorer les corrélations (temps vs note, par exemple)
+- **D'autres visualisations adéquates** pour explorer les corrélations (temps vs note, par exemple)
 
 ---
 
