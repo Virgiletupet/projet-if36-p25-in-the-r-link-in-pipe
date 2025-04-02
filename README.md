@@ -2,11 +2,13 @@
 
 ## 🧭 Introduction
 
+Lorsque nous avons dû choisir un sujet de projet pour visualiser des données, nous avons assez rapidement pensé aux **jeux vidéo**. C’est un domaine qui nous rassemble, qui parle à tout le monde dans notre groupe, et qui nous donne envie de travailler dessous. Nous voulions alors explorer un jeu de données à la fois accessible, complet, et compréhensible pour nous.
+
 ### 🗃️ Données
 
 **📄 Source**
 
-Notre objectif principal est d'analyser le temps de complétion de différents jeus vidéos afin de voir par quoi il est impacté. Nous avons donc sélectionné un jeu de données appelé Video Games Playtime, que nous avons trouvé sur [Kaggle](https://www.kaggle.com/datasets/baraazaid/how-long-to-beat-video-games). ll est basé sur les données du site [How Long To Beat](https://howlongtobeat.com), qui recense des données sur le temps nécessaire pour terminer un jeu vidéo, selon différents styles de jeu. Ce jeu de données a été mis à jour pour la dernière fois en **2023**. Le fichier est au format **jsonlines** et contient **60 410 entrées**.
+Ainsi, notre objectif principal est d'analyser le temps de complétion de différents jeus vidéos afin de voir par quoi il est impacté. Pour ce faire, nous avons donc sélectionné un jeu de données appelé Video Games Playtime, **Auteur Kaggle :** [baraazaid](https://www.kaggle.com/baraazaid), que nous avons trouvé sur [Kaggle](https://www.kaggle.com/datasets/baraazaid/how-long-to-beat-video-games) et qui remplissait nos critères. ll est basé sur les données du site [How Long To Beat](https://howlongtobeat.com), qui recense des données sur le temps nécessaire pour terminer un jeu vidéo, selon différents styles de jeu. Ce jeu de données a été mis à jour pour la dernière fois en **2023**. Le fichier est au format **jsonlines** et contient **60 410 entrées**.
 
 ---
 
