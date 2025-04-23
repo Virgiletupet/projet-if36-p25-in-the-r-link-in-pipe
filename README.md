@@ -97,6 +97,8 @@ D'une façon générale nous voulons comparer les temps moyens de complétion :
 - Par année (ou mois) de publication
 - Par note (`Review_score`)
 - Par extrêmes des temps de jeu : valeurs minimales et maximales
+- Comparaison du playtime Steam vs HowLongToBeat (vérifie siles joueurs jouent plus ou moins longtemps que ce qui est annoncé comme temps "complet".)
+- Prix vs Temps de complétion (valeur perçue) : price / average_playtime → coût par heure de jeu
 
 ---
 
@@ -107,7 +109,8 @@ Selon les variables analysées, nous envisageons d’utiliser :
 - Des **boîtes à moustaches** (boxplots) pour comparer les genres ou années
 - Des **courbes temporelles** pour étudier l’évolution dans le temps
 - **D'autres visualisations adéquates** pour explorer les corrélations (temps vs note, par exemple)
-
+- Des **matrices de corrélation** Visualiser les corrélations entre plusieurs variables quantitatives (playtime, ratings, score, price)
+- Des **Diagrammes de Sankey** voir combien de jeux “perdent” des joueurs à chaque étape
 ---
 
 **⚠️ Limites anticipées**
